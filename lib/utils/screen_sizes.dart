@@ -19,7 +19,17 @@ ScreenSizes screenSize(BuildContext context) {
 
 /// Gets the size of the day number widget.
 double getDayNumberSize(BuildContext context) {
-  return screenSize(context) == ScreenSizes.small ? 22.0 : 26.0;
+  if(screenSize(context) == ScreenSizes.small) {
+    print('screen-size = small => 22.0');
+    return 22.0;
+  }else if (screenSize(context) == ScreenSizes.medium) {
+    print('screen-size = medium => 26.0');
+    return 26.0;
+  }else {
+    print('screen-size = large => 26.0');
+    return 36.0;
+  }
+  //return screenSize(context) == ScreenSizes.small ? 22.0 : 26.0;
   // 12.0, 16.0
 }
 
