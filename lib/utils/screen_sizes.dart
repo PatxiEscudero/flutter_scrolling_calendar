@@ -19,7 +19,8 @@ ScreenSizes screenSize(BuildContext context) {
 
 /// Gets the size of the day number widget.
 double getDayNumberSize(BuildContext context) {
-  return screenSize(context) == ScreenSizes.small ? 12.0 : 16.0;
+  return screenSize(context) == ScreenSizes.small ? 22.0 : 26.0;
+  // 12.0, 16.0
 }
 
 /// Gets the vertical space that one month view takes up.
